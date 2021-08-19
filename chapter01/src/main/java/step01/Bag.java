@@ -9,10 +9,6 @@ public class Bag {
         return invitation != null;
     }
 
-    public boolean hasTicket() { //티켓 소유여부 체크
-        return ticket != null;
-    }
-
     public void setTicket(Ticket ticket) { //초대장을 티켓으로 교환 메서드
         this.ticket = ticket;
     }
