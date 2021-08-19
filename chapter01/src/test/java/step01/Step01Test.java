@@ -38,13 +38,13 @@ class Step01Test {
         Ticket ticket3 = new Ticket("티켓3", 300l); //티켓3
 
         TicketOffice ticketOffice = new TicketOffice(10000l, ticket1, ticket2, ticket3); //매표소
-        TicketSeller ticketSeller = new TicketSeller(ticketOffice);
+        TicketSeller ticketSeller = new TicketSeller(ticketOffice); //판매원
 
-        Bag bag = new Bag(20000l);
-        Audience audience =  new Audience(bag);
+        Bag bag = new Bag(20000l); //고객 가방
+        Audience audience =  new Audience(bag); //고객
 
-        Theater theater = new Theater(ticketSeller);
-        theater.enter(audience);
+        Theater theater = new Theater(ticketSeller); //소극장
+        theater.enter(audience); //프로세스
     }
 
 
