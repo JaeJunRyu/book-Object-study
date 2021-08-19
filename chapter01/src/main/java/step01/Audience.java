@@ -1,0 +1,16 @@
+package step01;
+
+public class Audience { //관람객
+    private Bag bag;
+
+    public Audience() {
+    }
+
+    public Audience(Bag bag) {
+        this.bag = bag;
+    }
+
+    public Bag getBag() {
+        return bag;
+    }
+}
