@@ -1,4 +1,6 @@
 rootProject.name = 'book-Object'
 include 'chapter01'
 include 'chapter01'
+include 'chapter02'
+include 'chapter01_java_jpa'
 
