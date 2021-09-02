@@ -1,4 +1,4 @@
-package step01;
+package step02;
 
 import java.time.Duration;
 
@@ -20,6 +20,20 @@ public class Movie {
     }
 
     public Money calculateMovieFee(Screening screening) { //1인당 예매 요금 계산
+//        if(discountPolicy == null) { //할인 정책이 없는 경우를 예외 케이스로 취급 한다.
+//            return fee;
+//        }
+
         return fee.minus(discountPolicy.calculateDiscountAmount(screening));  //할인 요금을 구하고 그만큼 요금 차감
+    }
+
+    @Override
+    public String toString() {
+        return "Movie{" +
+                "title='" + title + '\'' +
+                ", runningTime=" + runningTime +
+                ", fee=" + fee +
+                ", discountPolicy=" + discountPolicy +
+                '}';
     }
 }

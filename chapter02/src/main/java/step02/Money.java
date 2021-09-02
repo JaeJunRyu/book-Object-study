@@ -1,4 +1,4 @@
-package step01;
+package step02;
 
 import java.math.BigDecimal;
 
